@@ -1,0 +1,93 @@
+" vim: set ft=vim:
+set background=dark
+
+hi clear
+
+if exists("syntax_on")
+  syntax reset
+endif
+
+" Set environment to 256 colours
+set t_Co=256
+
+let colors_name = "<%= name %>"
+
+
+    " Vim Highlighting
+    highlight Normal guifg=#<%= foreground %> guibg=#<%=background %>
+    highlight LineNr guifg=#<%= foreground %>
+    highlight NonText guifg=#<%= selection %>
+    highlight SpecialKey guifg=#<%= selection %>
+    highlight Search guifg=#<%= background %> guibg=#<%= yellow %>
+    highlight TabLine guifg=#<%= foreground %> guibg=#<%= background %> gui=reverse
+    highlight StatusLine guifg=#<%= foreground %> guibg=#<%= background %> gui=reverse
+    highlight StatusLineNC guifg=#<%= foreground %> guibg=#<%= background %> gui=reverse
+    highlight Visual guifg=#<%= selection %> guibg=#<%= selection %>
+    highlight Directory guifg=#<%= blue %>
+    highlight ModeMsg guifg=#<%= green %>
+    highlight MoreMsg guifg=#<%= green %>
+    highlight Question guifg=#<%= green %>
+    highlight WarningMsg guifg=#<%= red %>
+    if version >= 700
+        highlight CursorLine guibg=#<%=line %> gui=none
+        highlight CursorColumn guibg=#<%=line %> gui=none
+        highlight PMenu guifg=#<%= foreground %> guibg=#<%= selection %> gui=none
+        highlight PMenuSel guifg=#<%= foreground %> guibg=#<%= selection %> gui=reverse
+    end
+
+    " Standard Highlighting
+    highlight Comment guifg=#<%= comment %>
+    highlight Todo guifg=#<%= comment %>
+    highlight Title guifg=#<%= comment %>
+    highlight Identifier guifg=#<%= red %> gui=none
+    highlight Statement guifg=#<%= foreground %>
+    highlight Conditional guifg=#<%= foreground %>
+    highlight Repeat guifg=#<%= foreground %>
+    highlight Structure guifg=#<%= purple %>
+    highlight Function guifg=#<%= blue %>
+    highlight Constant guifg=#<%= orange %>
+    highlight String guifg=#<%= green %>
+    highlight Special guifg=#<%= foreground %>
+    highlight PreProc guifg=#<%= purple %>
+    highlight Operator guifg=#<%= aqua %> gui=none
+    highlight Type guifg=#<%= blue %> gui=none
+    highlight Define guifg=#<%= purple %> gui=none
+    highlight Include guifg=#<%= blue %>
+
+    " Vim Highlighting
+    highlight vimCommand guifg=#<%= red %> gui=none
+
+    " C Highlighting
+    highlight cType guifg=#<%= yellow %>
+    highlight cStorageClass guifg=#<%= purple %>
+
+    " PHP Highlighting
+    highlight phpVarSelector guifg=#<%= red %>
+    highlight phpKeyword guifg=#<%= purple %>
+    highlight phpRepeat guifg=#<%= purple %>
+    highlight phpConditional guifg=#<%= purple %>
+    highlight phpStatement guifg=#<%= purple %>
+    highlight phpMemberSelector guifg=#<%= foreground %>
+
+    " Ruby Highlighting
+    highlight rubySymbol guifg=#<%= green %>
+    highlight rubyConstant guifg=#<%= yellow %>
+    highlight rubyAttribute guifg=#<%= blue %>
+    highlight rubyInclude guifg=#<%= blue %>
+    highlight rubyLocalVariableOrMethod guifg=#<%= orange %>
+    highlight rubyCurlyBlock guifg=#<%= orange %>
+
+    " Python Highlighting
+    highlight pythonInclude guifg=#<%= purple %>
+    highlight pythonStatement guifg=#<%= purple %>
+    highlight pythonConditional guifg=#<%= purple %>
+    highlight pythonFunction guifg=#<%= blue %>
+
+    " JavaScript Highlighting
+    highlight javaScriptBraces guifg=#<%= foreground %>
+    highlight javaScriptFunction guifg=#<%= purple %>
+    highlight javaScriptConditional guifg=#<%= purple %>
+    highlight javaScriptRepeat guifg=#<%= purple %>
+    highlight javaScriptNumber guifg=#<%= orange %>
+    highlight javaScriptMember guifg=#<%= orange %>
+

@@ -1,0 +1,18 @@
+---
+name: solar
+base03:  "002b36" #Background Dark
+base02:  "073642" # Background Light
+base01:  "586e75" # Content Darkest
+base00:  "657b83" # Content
+base0:   "839496" # Content
+base1:   "93a1a1" # Content Lightest
+base2:   "eee8d5" # Unused
+base3:   "fdf6e3" # Unused
+yellow:  "b58900"
+orange:  "cb4b16"
+red:     "dc322f"
+magenta: "d33682"
+violet:  "6c71c4"
+blue:    "268bd2"
+cyan:    "2aa198"
+green:   "719e07"
