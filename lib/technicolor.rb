@@ -1,0 +1,3 @@
+module Technicolor
+  # Your code goes here...
+end
