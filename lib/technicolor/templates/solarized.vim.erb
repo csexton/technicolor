@@ -42,7 +42,7 @@ term_blue    = "4"
 term_cyan    = "6"
 term_green   = "2"
 
-fmt_none     = "gui=none cterm=none"
+fmt_none     = "gui=NONE cterm=NONE"
 fmt_bold     = "gui=bold cterm=bold"
 fmt_bldi     = "gui=bold cterm=bold"
 fmt_undr     = "gui=underline cterm=underline"
@@ -76,8 +76,7 @@ sp_violet    = "guisp=##{violet}"
 sp_blue      = "guisp=##{blue}"
 sp_cyan      = "guisp=##{cyan}"
 
-fg_none      = "guifg=NONE        ctermfg=NONE"
-fg_back      = "guifg=##{base03}  ctermfg=#{term_base03}"
+fg_none      = "guifg=NONE" #        ctermfg=NONE"
 fg_base03    = "guifg=##{base03}  ctermfg=#{term_base03}"
 fg_base02    = "guifg=##{base02}  ctermfg=#{term_base02}"
 fg_base01    = "guifg=##{base01}  ctermfg=#{term_base01}"
@@ -95,24 +94,24 @@ fg_blue      = "guifg=##{blue}    ctermfg=#{term_blue}"
 fg_cyan      = "guifg=##{cyan}    ctermfg=#{term_cyan}"
 fg_green     = "guifg=##{green}   ctermfg=#{term_green}"
 
-bg_none      =  "guibg=NONE       ctermfg=NONE"
-bg_back      = "guibg=##{base03} ctermfg=#{term_base03}"
-bg_base03    = "guibg=##{base03} ctermfg=#{term_base03}"
-bg_base02    = "guibg=##{base02} ctermfg=#{term_base02}"
-bg_base01    = "guibg=##{base01} ctermfg=#{term_base01}"
-bg_base00    = "guibg=##{base00} ctermfg=#{term_base00}"
-bg_base0     = "guibg=##{base0}  ctermfg=#{term_base0}"
-bg_base1     = "guibg=##{base1}  ctermfg=#{term_base1}"
-bg_base2     = "guibg=##{base2}  ctermfg=#{term_base2}"
-bg_base3     = "guibg=##{base3}  ctermfg=#{term_base3}"
-bg_yellow    = "guibg=##{yellow} ctermfg=#{term_yellow}"
-bg_orange    = "guibg=##{orange} ctermfg=#{term_orange}"
-bg_red       = "guibg=##{red}    ctermfg=#{term_red}"
-bg_magenta   = "guibg=##{magenta}ctermfg=#{term_magenta}"
-bg_violet    = "guibg=##{violet} ctermfg=#{term_violet}"
-bg_blue      = "guibg=##{blue}   ctermfg=#{term_blue}"
-bg_cyan      = "guibg=##{cyan}   ctermfg=#{term_cyan}"
-bg_green     = "guibg=##{green}  ctermfg=#{term_green}"
+bg_none      =  "guibg=NONE"#       ctermfg=NONE"
+bg_back      = "guibg=##{base03} ctermbg=#{term_base03}"
+bg_base03    = "guibg=##{base03} ctermbg=#{term_base03}"
+bg_base02    = "guibg=##{base02} ctermbg=#{term_base02}"
+bg_base01    = "guibg=##{base01} ctermbg=#{term_base01}"
+bg_base00    = "guibg=##{base00} ctermbg=#{term_base00}"
+bg_base0     = "guibg=##{base0}  ctermbg=#{term_base0}"
+bg_base1     = "guibg=##{base1}  ctermbg=#{term_base1}"
+bg_base2     = "guibg=##{base2}  ctermbg=#{term_base2}"
+bg_base3     = "guibg=##{base3}  ctermbg=#{term_base3}"
+bg_yellow    = "guibg=##{yellow} ctermbg=#{term_yellow}"
+bg_orange    = "guibg=##{orange} ctermbg=#{term_orange}"
+bg_red       = "guibg=##{red}    ctermbg=#{term_red}"
+bg_magenta   = "guibg=##{magenta}ctermbg=#{term_magenta}"
+bg_violet    = "guibg=##{violet} ctermbg=#{term_violet}"
+bg_blue      = "guibg=##{blue}   ctermbg=#{term_blue}"
+bg_cyan      = "guibg=##{cyan}   ctermbg=#{term_cyan}"
+bg_green     = "guibg=##{green}  ctermbg=#{term_green}"
 %>
 " vim: set ft=vim:
 set background=dark
@@ -133,7 +132,7 @@ let colors_name = "<%= name %>"
 " note that link syntax to avoid duplicate configuration doesn't work with the
 " exe compiled formats
 
-hi! Normal         <%= fmt_none %>   <%= fg_base0 %>  <%= bg_back %>
+hi! Normal         <%= fmt_none %>   <%= fg_base0 %>  <%= bg_base03 %>
 
 hi! Comment        <%= fmt_ital %>   <%= fg_base01 %> <%= bg_none %>
 "       *Comment         any comment

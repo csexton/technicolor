@@ -1,0 +1,20 @@
+
+---
+name: technicolor
+base03:  "1d1f21" #Background Dark
+base02:  "ff9900" # Background Light
+base01:  "373b41" # Content Darkest
+base00:  "657b83" # Content
+base0:   "839496" # Content
+base1:   "93a1a1" # Content Lightest
+base2:   "eee8d5" # Unused
+base3:   "fdf6e3" # Unused
+yellow: "f0c674"
+orange: "de935f"
+red:    "cc6666"
+magenta: "d33682"
+violet: "b294bb"
+blue:   "81a2be"
+cyan:   "8abeb7"
+green:  "b5bd68"
+

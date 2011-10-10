@@ -1,5 +1,5 @@
 ---
-name: solar
+name: technicolor
 base03:  "002b36" #Background Dark
 base02:  "073642" # Background Light
 base01:  "586e75" # Content Darkest
